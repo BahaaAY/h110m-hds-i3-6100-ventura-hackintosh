@@ -1,0 +1,1 @@
+# h110m-hds-i3-6100-ventura-hackintosh

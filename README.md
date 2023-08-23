@@ -46,7 +46,7 @@
 
 </details>
 <details>
-<summary><strong>🔧 Generating SMBIOS</strong></summary>
+<summary><strong>🔢 Generating SMBIOS</strong></summary>
   <br>
 
 - ### Generating SMBIOS:
@@ -60,6 +60,25 @@ Used [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) from corpnewt, to genera
 4. **IMPORTANT:** reminder that you need an **invalid serial!** to check copy and paste the second part saying `Serial: XXXXX..` in [Apple's Check Coverage Page](https://checkcoverage.apple.com/), if you get a red message saying "We're sorry, we're unable to check coverage for this serial number."
  then, you're good to go! Otherwise, go back and restart from step `2` (more info [here](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#serial-number-validity))
 5. once you get the right serial number you can go and fill the generated data in the config.plist file under `PlatformInfo` section, and you are good to go! 
+</details>
+<details>
+<summary><strong>🫣 iGPU Spoofing </strong></summary>
+  <br>
+  
+- ### Generating Patch:
+**This step is done after you finish the installation**
+1. Download [Hackintool](https://github.com/benbaker76/Hackintool) and open it.
+2. Go to `Patch` Category 
+3. Select `Kaby Lake` in the `Intel Generation` Dropdown.
+4. Select `0x59120000` in the `Platform ID` Dropdown.
+5. Go to the `Patch` Tab and the `Advanced` menu.
+6. Enable `DP -> HDMI`, `Use Intel HDMI`, and `Enable HDMI20 (4K)`.
+7. Enable `Spoof Video Device ID` and select `0x5912: Intel HD Graphics 630` from the dropdown menu.
+8. Click `Generate Patch`
+9. Now you got the patch, you need to copy the `PciRoot(0x0)/Pci(0x2,0x0)` Key .
+10. Paste it under `DeviceProperties > Add` in your config.plist file.
+11. Enjoy!
+
 </details>
 
 

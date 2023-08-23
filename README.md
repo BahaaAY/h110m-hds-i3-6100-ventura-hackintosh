@@ -10,6 +10,8 @@
 - The readme is not yet complete and the efi is not yet complete nor clean from unused stuff
 ##
 
+![ScreenShot](/Screenshots/Screenshot%201445-02-07%20at%2011.02.39%20PM.png?raw=true "ScreenShot")
+
 ### 🖥️ Hardware
 | Component      | info                                                             |
 |----------------|------------------------------------------------------------------|

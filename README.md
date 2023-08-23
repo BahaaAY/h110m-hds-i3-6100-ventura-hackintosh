@@ -45,6 +45,25 @@
 
 
 </details>
+<details>
+<summary><strong>🔧 Generating SMBIOS</strong></summary>
+  <br>
+
+- ### Generating SMBIOS:
+
+Used [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) from corpnewt, to generate a fake serial number, UUID and MLB.
+
+**This step is mandatory to get the device booting and get iServices to work later on**
+1. Download GenSMBIOS from the link above as .ZIP, then extract it.
+2. Start GenSMBIOS and select option `1` to download and install MacSerial
+3. Select option `3` and enter `iMac18,1`
+4. **IMPORTANT:** reminder that you need an **invalid serial!** to check copy and paste the second part saying `Serial: XXXXX..` in [Apple's Check Coverage Page](https://checkcoverage.apple.com/), if you get a red message saying "We're sorry, we're unable to check coverage for this serial number."
+ then, you're good to go! Otherwise, go back and restart from step `2` (more info [here](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#serial-number-validity))
+5. once you get the right serial number you can go and fill the generated data in the config.plist file under `PlatformInfo` section, and you are good to go! 
+</details>
+
+
+
 
 
   

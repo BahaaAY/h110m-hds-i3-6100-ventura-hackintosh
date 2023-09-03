@@ -37,6 +37,7 @@
 
 - Sleep
 - Airdrop (No natively compatible wifi adapter)
+- Hardware DRM (No compatible dGPU): [Fixing DRM support and iGPU performance](https://dortania.github.io/OpenCore-Post-Install/universal/drm.html)   
 
 
 

@@ -7,7 +7,7 @@
 - Use this EFI as a **starting point**, remember to always make your efi by following [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - This EFI may not be constantly updated to the latest version of opencore especially if no major changes are made
 - Please read the whole readme before proceeding
-- The readme is not yet complete and the efi is not yet complete nor clean from unused stuff
+- This readme is not yet complete and the efi is not yet complete nor clean from unused stuff
 ##
 
 ![ScreenShot](/Screenshots/Screenshot%201445-02-07%20at%2011.02.39%20PM.png?raw=true "ScreenShot")

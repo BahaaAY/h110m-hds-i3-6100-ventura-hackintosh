@@ -61,7 +61,7 @@ Used [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) from corpnewt, to genera
 2. Start GenSMBIOS and select option `1` to download and install MacSerial
 3. Select option `3` and enter `iMac18,1`
 4. **IMPORTANT:** reminder that you need an **invalid serial!** to check copy and paste the second part saying `Serial: XXXXX..` in [Apple's Check Coverage Page](https://checkcoverage.apple.com/), if you get a red message saying "We're sorry, we're unable to check coverage for this serial number."
- then, you're good to go! Otherwise, go back and restart from step `2` (more info [here](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#serial-number-validity))
+ then you're good to go! Otherwise, go back and restart from step `2` (more info [here](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#serial-number-validity))
 5. once you get the right serial number you can go and fill the generated data in the config.plist file under `PlatformInfo` section, and you are good to go! 
 </details>
 <details>
@@ -81,6 +81,7 @@ Used [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) from corpnewt, to genera
 9. Now you got the patch, you need to copy the `PciRoot(0x0)/Pci(0x2,0x0)` Key .
 10. Paste it under `DeviceProperties > Add` in your config.plist file.
 11. Enjoy!
+
 
 </details>
 
